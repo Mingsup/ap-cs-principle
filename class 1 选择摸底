@@ -1,0 +1,312 @@
+1
+x ← 3
+REPEAT 2 TIMES
+{
+  x ← x + x
+}
+DISPLAY(x)
+
+A. 6
+B. 9
+C. 12
+D. 18
+
+答案：C
+
+2
+x ← 1
+REPEAT UNTIL x ≥ 8
+{
+  x ← x * 2
+}
+DISPLAY(x)
+
+A. 4
+B. 6
+C. 8
+D. 16
+
+答案：C
+
+3（易错）
+x ← 8
+REPEAT UNTIL x < 3
+{
+  x ← x - 2
+}
+DISPLAY(x)
+
+A. 2
+B. 3
+C. 4
+D. 6
+
+答案：A
+
+4
+x ← 5
+y ← 2
+IF x > 3 AND y < 5
+{
+  DISPLAY("YES")
+}
+ELSE
+{
+  DISPLAY("NO")
+}
+
+A. YES
+B. NO
+C. Error
+D. 5
+
+答案：A
+
+5
+x ← 5
+y ← 2
+IF x > 6 OR y < 3
+{
+  DISPLAY("YES")
+}
+ELSE
+{
+  DISPLAY("NO")
+}
+
+A. YES
+B. NO
+C. Error
+D. 2
+
+答案：A
+
+6
+nums ← [2, 4, 6]
+sum ← 0
+
+REPEAT 3 TIMES
+{
+  sum ← sum + nums[1]
+}
+DISPLAY(sum)
+
+A. 2
+B. 6
+C. 12
+D. 18
+
+答案：B
+
+7（list traversal 思维）
+nums ← [1, 2, 3]
+total ← 0
+
+REPEAT 3 TIMES
+{
+  total ← total + 1
+}
+DISPLAY(total)
+
+A. 1
+B. 2
+C. 3
+D. 6
+
+答案：C
+
+8（嵌套循环）
+count ← 0
+
+REPEAT 2 TIMES
+{
+  REPEAT 3 TIMES
+  {
+    count ← count + 1
+  }
+}
+DISPLAY(count)
+
+A. 3
+B. 5
+C. 6
+D. 9
+
+答案：C
+
+9
+nums ← [10, 20, 30]
+DISPLAY(nums[1] + nums[3])
+
+A. 30
+B. 40
+C. 50
+D. 60
+
+答案：B
+
+10
+nums ← [5, 10, 15]
+nums[3] ← nums[1]
+DISPLAY(nums[3])
+
+A. 5
+B. 10
+C. 15
+D. Error
+
+答案：A
+
+11（procedure）
+PROCEDURE add(a, b)
+{
+  DISPLAY(a + b)
+}
+
+add(3, 4)
+
+A. 3
+B. 4
+C. 7
+D. Nothing
+
+答案：C
+
+12（return vs display）
+PROCEDURE add(a, b)
+{
+  RETURN(a + b)
+}
+
+DISPLAY(add(3, 4))
+
+A. 3
+B. 4
+C. 7
+D. Error
+
+答案：C
+
+13（重点坑）
+PROCEDURE test(x)
+{
+  x ← x + 1
+}
+
+x ← 5
+test(x)
+DISPLAY(x)
+
+A. 5
+B. 6
+C. 7
+D. Error
+
+答案：A
+（参数是局部变量）
+
+14
+PROCEDURE double(x)
+{
+  RETURN(x * 2)
+}
+
+y ← double(4)
+DISPLAY(y)
+
+A. 4
+B. 6
+C. 8
+D. 16
+
+答案：C
+
+15（algorithm结构）
+
+Which part of this code represents iteration?
+
+REPEAT 5 TIMES
+{
+  x ← x + 1
+}
+
+A. x ← x + 1
+B. REPEAT
+C. DISPLAY
+D. Variable
+
+答案：B
+
+16（bug识别）
+x ← 0
+REPEAT 3 TIMES
+{
+  x ← x + 2
+}
+DISPLAY(x)
+
+Which of the following is the output?
+
+A. 2
+B. 4
+C. 6
+D. 8
+
+答案：C
+
+17（条件逻辑）
+x ← 4
+IF x MOD 2 = 0
+{
+  DISPLAY("Even")
+}
+ELSE
+{
+  DISPLAY("Odd")
+}
+
+A. Even
+B. Odd
+C. 4
+D. Error
+
+答案：A
+
+18（综合）
+nums ← [2, 4, 6]
+total ← 0
+
+REPEAT 3 TIMES
+{
+  total ← total + 2
+}
+DISPLAY(total)
+
+A. 2
+B. 4
+C. 6
+D. 12
+
+答案：C
+
+19（多选）
+
+Which TWO statements are true?
+
+A. A loop repeats instructions
+B. A function always returns a value
+C. A list can store multiple values
+D. IF statement repeats code
+
+答案：A, C
+
+20（抽象）
+
+Why is using procedures helpful?
+
+A. Makes code longer
+B. Reduces repetition
+C. Avoids variables
+D. Removes loops
+
+答案：B
