@@ -1,0 +1,297 @@
+1
+x ← 4
+x ← x + 3
+DISPLAY(x)
+
+A. 3
+B. 4
+C. 7
+D. 43
+
+答案：C
+
+2
+x ← 10
+x ← x - 2
+DISPLAY(x)
+
+A. 8
+B. 10
+C. 12
+D. 20
+
+答案：A
+
+3
+x ← 5
+IF x > 3
+{
+  DISPLAY("YES")
+}
+ELSE
+{
+  DISPLAY("NO")
+}
+
+A. YES
+B. NO
+C. 5
+D. Error
+
+答案：A
+
+4
+x ← 2
+IF x > 3
+{
+  DISPLAY("A")
+}
+ELSE
+{
+  DISPLAY("B")
+}
+
+A. A
+B. B
+C. 2
+D. Error
+
+答案：B
+
+5
+score ← 85
+IF score ≥ 60
+{
+  DISPLAY("Pass")
+}
+ELSE
+{
+  DISPLAY("Fail")
+}
+
+A. Pass
+B. Fail
+C. 85
+D. Error
+
+答案：A
+
+6
+x ← 1
+REPEAT 3 TIMES
+{
+  x ← x + 2
+}
+DISPLAY(x)
+
+A. 3
+B. 5
+C. 7
+D. 9
+
+答案：C
+
+7
+x ← 0
+REPEAT 4 TIMES
+{
+  x ← x + 1
+}
+DISPLAY(x)
+
+A. 3
+B. 4
+C. 5
+D. 6
+
+答案：B
+
+8
+x ← 2
+REPEAT 3 TIMES
+{
+  x ← x * 2
+}
+DISPLAY(x)
+
+A. 6
+B. 8
+C. 12
+D. 16
+
+答案：D
+
+9
+x ← 1
+REPEAT UNTIL x > 5
+{
+  x ← x + 2
+}
+DISPLAY(x)
+
+A. 5
+B. 6
+C. 7
+D. 8
+
+答案：C
+
+10
+x ← 10
+REPEAT UNTIL x < 5
+{
+  x ← x - 2
+}
+DISPLAY(x)
+
+A. 4
+B. 5
+C. 6
+D. 8
+
+答案：A
+
+11
+nums ← [3, 6, 9]
+DISPLAY(nums[1])
+
+A. 3
+B. 6
+C. 9
+D. Error
+
+答案：A
+
+12
+nums ← [3, 6, 9]
+DISPLAY(nums[2])
+
+A. 3
+B. 6
+C. 9
+D. Error
+
+答案：B
+
+13
+nums ← [10, 20, 30]
+nums[2] ← 50
+DISPLAY(nums[2])
+
+A. 20
+B. 30
+C. 50
+D. 10
+
+答案：C
+
+14
+colors ← ["red", "blue", "green"]
+DISPLAY(colors[3])
+
+A. red
+B. blue
+C. green
+D. Error
+
+答案：C
+
+15
+PROCEDURE greet(name)
+{
+  DISPLAY("Hello")
+  DISPLAY(name)
+}
+
+greet("Amy")
+
+A. Hello Amy
+B. Hello on one line, Amy on next line
+C. Amy Hello
+D. Error
+
+答案：B
+
+16
+PROCEDURE add(a, b)
+{
+  RETURN(a + b)
+}
+
+DISPLAY(add(2, 5))
+
+A. 2
+B. 5
+C. 7
+D. 25
+
+答案：C
+
+17
+PROCEDURE square(x)
+{
+  RETURN(x * x)
+}
+
+DISPLAY(square(4))
+
+A. 8
+B. 16
+C. 12
+D. 4
+
+答案：B
+
+18
+x ← 7
+IF x MOD 2 = 0
+{
+  DISPLAY("Even")
+}
+ELSE
+{
+  DISPLAY("Odd")
+}
+
+A. Even
+B. Odd
+C. 7
+D. Error
+
+答案：B
+
+19
+count ← 0
+nums ← [1, 2, 3]
+
+REPEAT 3 TIMES
+{
+  count ← count + 1
+}
+
+DISPLAY(count)
+
+A. 1
+B. 2
+C. 3
+D. 6
+
+答案：C
+
+20
+total ← 0
+nums ← [2, 4, 6]
+
+REPEAT 3 TIMES
+{
+  total ← total + 2
+}
+
+DISPLAY(total)
+
+A. 2
+B. 4
+C. 6
+D. 12
+
+答案：C
