@@ -1,0 +1,237 @@
+1.
+
+Which of the following best describes a bit?
+
+A. A group of 8 binary digits
+B. A single binary digit
+C. A unit of memory storage equal to 1024 bytes
+D. A character in ASCII
+
+Answer: B
+
+2.
+
+What is the decimal value of binary number 1010?
+
+A. 8
+B. 10
+C. 12
+D. 14
+
+Answer: B
+
+3.
+
+Which of the following best explains how images are stored digitally?
+
+A. As sequences of words
+B. As collections of pixels with numeric color values
+C. As compressed audio signals
+D. As ASCII characters
+
+Answer: B
+
+4.
+
+Lossy compression differs from lossless compression because:
+
+A. It uses more storage
+B. It preserves all original data
+C. It removes some data permanently
+D. It only works on text
+
+Answer: C
+
+5.
+
+Which of the following is true about data representation?
+
+A. All data must be stored as text
+B. All data can be represented in binary
+C. Images cannot be digitized
+D. Sound cannot be compressed
+
+Answer: B
+
+Part 2：Programming & Logic（6–12）
+6.
+
+What will the following code output?
+
+x ← 5  
+IF x > 3  
+  DISPLAY("A")  
+ELSE  
+  DISPLAY("B")
+
+A. A
+B. B
+C. 5
+D. Error
+
+Answer: A
+
+7.
+
+What is the value of x after execution?
+
+x ← 0  
+REPEAT 3 TIMES  
+  x ← x + 2
+
+A. 2
+B. 3
+C. 6
+D. 8
+
+Answer: C
+
+8.
+
+Which of the following is an example of abstraction?
+
+A. Writing every line of code manually
+B. Using a function to simplify repeated code
+C. Increasing program length
+D. Avoiding variables
+
+Answer: B
+
+9.
+
+Which of the following includes all three components of an algorithm?
+
+A. Input, output, storage
+B. Sequence, selection, iteration
+C. Binary, decimal, hex
+D. Function, variable, list
+
+Answer: B
+
+10.
+
+What does a loop do?
+
+A. Stores data
+B. Repeats a set of instructions
+C. Ends a program
+D. Displays output
+
+Answer: B
+
+11.
+
+Which of the following is TRUE about lists?
+
+A. They can store multiple values
+B. They only store one value
+C. They cannot be modified
+D. They only store numbers
+
+Answer: A
+
+12.
+
+What will this code output?
+
+list ← [1, 2, 3]  
+DISPLAY(list[2])
+
+A. 1
+B. 2
+C. 3
+D. Error
+
+Answer: C
+（AP用1-based index）
+
+Part 3：Internet（13–16）
+13.
+
+What is the main purpose of DNS?
+
+A. Store images
+B. Convert domain names into IP addresses
+C. Compress data
+D. Encrypt messages
+
+Answer: B
+
+14.
+
+Which of the following best describes packet switching?
+
+A. Data is sent as one large block
+B. Data is sent in small pieces and reassembled
+C. Data is deleted after sending
+D. Data is always encrypted
+
+Answer: B
+
+15.
+
+Which of the following is an IP address?
+
+A. www.google.com
+
+B. 192.168.1.1
+C. HTTP
+D. DNS
+
+Answer: B
+
+16.
+
+Which of the following helps keep communication secure?
+
+A. Compression
+B. Encryption
+C. Pixelation
+D. Iteration
+
+Answer: B
+
+Part 4：Impact（17–20）
+17.
+
+Which of the following is a potential negative impact of computing?
+
+A. Faster communication
+B. Data privacy concerns
+C. Easier data storage
+D. Improved efficiency
+
+Answer: B
+
+18.
+
+Which of the following is an example of computing bias?
+
+A. Faster processing speed
+B. AI making unfair decisions due to biased data
+C. Storing data in binary
+D. Using encryption
+
+Answer: B
+
+19.（多选题：选 TWO）
+
+Which TWO are benefits of digital data?
+
+A. Easy to copy
+B. Can be shared quickly
+C. Cannot be modified
+D. Always secure
+
+Answer: A, B
+
+20.（多选题：选 TWO）
+
+Which TWO are characteristics of the Internet?
+
+A. Centralized system
+B. Uses packet switching
+C. Fault tolerant
+D. Uses only one server
+
+Answer: B, C
