@@ -1,0 +1,1319 @@
+
+# 1
+
+```text
+PROCEDURE addOne(x)
+{
+  RETURN(x + 1)
+}
+
+PROCEDURE convert(x)
+{
+  IF x MOD 2 = 0
+  {
+    RETURN(addOne(x))
+  }
+  ELSE
+  {
+    RETURN(addOne(x + 1))
+  }
+}
+
+PROCEDURE valid(x)
+{
+  IF x ≥ 4 AND x ≤ 8
+  {
+    RETURN(true)
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [2, 3, 5, 6, 8]
+i ← 1
+count ← 0
+sum ← 0
+
+REPEAT 5 TIMES
+{
+  value ← convert(nums[i])
+
+  IF valid(value)
+  {
+    count ← count + 1
+    sum ← sum + value
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+```
+
+---
+
+# 2
+
+```text
+PROCEDURE change(x)
+{
+  IF x > 5
+  {
+    RETURN(x - 2)
+  }
+  ELSE
+  {
+    RETURN(x + 2)
+  }
+}
+
+PROCEDURE finalValue(x)
+{
+  RETURN(change(x) + 1)
+}
+
+PROCEDURE check(x)
+{
+  IF x ≥ 5 AND x ≤ 9
+  {
+    IF x ≠ 7
+    {
+      RETURN(true)
+    }
+    ELSE
+    {
+      RETURN(false)
+    }
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [2, 4, 6, 7, 10]
+i ← 1
+count ← 0
+score ← 0
+
+REPEAT 5 TIMES
+{
+  value ← finalValue(nums[i])
+
+  IF check(value)
+  {
+    count ← count + 1
+    score ← score + value
+  }
+  ELSE
+  {
+    score ← score + 1
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(score)
+```
+
+---
+
+# 3
+
+```text
+PROCEDURE step(x)
+{
+  RETURN(x + 2)
+}
+
+PROCEDURE convert(x)
+{
+  IF x MOD 3 = 0
+  {
+    RETURN(step(x))
+  }
+  ELSE
+  {
+    RETURN(step(x - 1))
+  }
+}
+
+PROCEDURE good(x)
+{
+  IF x > 3 AND x < 10
+  {
+    RETURN(true)
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+vals ← [3, 4, 6, 8, 9]
+i ← 1
+count ← 0
+sum ← 0
+bonus ← 0
+
+REPEAT 5 TIMES
+{
+  num ← convert(vals[i])
+
+  IF good(num)
+  {
+    count ← count + 1
+    sum ← sum + num
+
+    IF num > 7
+    {
+      bonus ← bonus + 2
+    }
+    ELSE
+    {
+      bonus ← bonus + 1
+    }
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+DISPLAY(bonus)
+```
+
+---
+
+# 4
+
+```text
+PROCEDURE first(x)
+{
+  RETURN(x * 2)
+}
+
+PROCEDURE second(x)
+{
+  IF x > 6
+  {
+    RETURN(first(x - 3))
+  }
+  ELSE
+  {
+    RETURN(first(x))
+  }
+}
+
+PROCEDURE valid(x)
+{
+  IF x ≥ 6 AND x ≤ 12
+  {
+    IF NOT(x = 10)
+    {
+      RETURN(true)
+    }
+    ELSE
+    {
+      RETURN(false)
+    }
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [2, 4, 5, 7, 8]
+i ← 1
+count ← 0
+total ← 0
+
+REPEAT 5 TIMES
+{
+  value ← second(nums[i])
+
+  IF valid(value)
+  {
+    count ← count + 1
+    total ← total + value
+  }
+  ELSE
+  {
+    total ← total + 1
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(total)
+```
+
+---
+
+# 5
+
+```text
+PROCEDURE increase(x)
+{
+  RETURN(x + 3)
+}
+
+PROCEDURE adjust(x)
+{
+  IF x MOD 2 = 1
+  {
+    RETURN(increase(x))
+  }
+  ELSE
+  {
+    RETURN(increase(x - 2))
+  }
+}
+
+PROCEDURE test(x)
+{
+  IF x ≥ 5 AND x ≤ 11
+  {
+    RETURN(true)
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [2, 3, 6, 7, 10]
+i ← 1
+count ← 0
+sum ← 0
+score ← 0
+
+REPEAT 5 TIMES
+{
+  value ← adjust(nums[i])
+
+  IF test(value)
+  {
+    count ← count + 1
+    sum ← sum + value
+    score ← score + 2
+  }
+  ELSE
+  {
+    score ← score + 1
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+DISPLAY(score)
+```
+
+---
+
+# 6
+
+```text
+PROCEDURE base(x)
+{
+  IF x < 5
+  {
+    RETURN(x + 4)
+  }
+  ELSE
+  {
+    RETURN(x - 1)
+  }
+}
+
+PROCEDURE transform(x)
+{
+  RETURN(base(x) + 1)
+}
+
+PROCEDURE allow(x)
+{
+  IF x ≥ 5 AND x ≤ 8
+  {
+    IF x ≠ 6
+    {
+      RETURN(true)
+    }
+    ELSE
+    {
+      RETURN(false)
+    }
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+list ← [1, 4, 5, 8, 9]
+i ← 1
+count ← 0
+sum ← 0
+
+REPEAT 5 TIMES
+{
+  n ← transform(list[i])
+
+  IF allow(n)
+  {
+    count ← count + 1
+    sum ← sum + n
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+```
+
+---
+
+# 7
+
+```text
+PROCEDURE f(x)
+{
+  RETURN(x - 1)
+}
+
+PROCEDURE g(x)
+{
+  IF x MOD 2 = 0
+  {
+    RETURN(f(x + 2))
+  }
+  ELSE
+  {
+    RETURN(f(x + 1))
+  }
+}
+
+PROCEDURE h(x)
+{
+  IF x > 4 AND x < 9
+  {
+    RETURN(true)
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [2, 3, 5, 6, 8]
+i ← 1
+count ← 0
+sum ← 0
+points ← 0
+
+REPEAT 5 TIMES
+{
+  value ← g(nums[i])
+
+  IF h(value)
+  {
+    count ← count + 1
+    sum ← sum + value
+
+    IF value = 5 OR value = 7
+    {
+      points ← points + 2
+    }
+    ELSE
+    {
+      points ← points + 1
+    }
+  }
+  ELSE
+  {
+    points ← points + 1
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+DISPLAY(points)
+```
+
+---
+
+# 8
+
+```text
+PROCEDURE plusTwo(x)
+{
+  RETURN(x + 2)
+}
+
+PROCEDURE convert(x)
+{
+  IF x ≥ 6
+  {
+    RETURN(plusTwo(x - 4))
+  }
+  ELSE
+  {
+    RETURN(plusTwo(x))
+  }
+}
+
+PROCEDURE valid(x)
+{
+  IF x ≥ 4 AND x ≤ 7
+  {
+    RETURN(true)
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [1, 3, 6, 8, 10]
+i ← 1
+count ← 0
+total ← 0
+
+REPEAT 5 TIMES
+{
+  value ← convert(nums[i])
+
+  IF valid(value)
+  {
+    count ← count + 1
+    total ← total + value
+  }
+  ELSE
+  {
+    total ← total + 2
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(total)
+```
+
+---
+
+# 9
+
+```text
+PROCEDURE one(x)
+{
+  RETURN(x + 1)
+}
+
+PROCEDURE two(x)
+{
+  RETURN(one(x) + 2)
+}
+
+PROCEDURE check(x)
+{
+  IF x ≥ 5 AND x ≤ 10
+  {
+    IF NOT(x = 8)
+    {
+      RETURN(true)
+    }
+    ELSE
+    {
+      RETURN(false)
+    }
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+vals ← [2, 4, 5, 7, 8]
+i ← 1
+count ← 0
+sum ← 0
+score ← 0
+
+REPEAT 5 TIMES
+{
+  num ← two(vals[i])
+
+  IF check(num)
+  {
+    count ← count + 1
+    sum ← sum + num
+
+    IF num > 6
+    {
+      score ← score + 2
+    }
+    ELSE
+    {
+      score ← score + 1
+    }
+  }
+  ELSE
+  {
+    score ← score + 1
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+DISPLAY(score)
+```
+
+---
+
+# 10
+
+```text
+PROCEDURE move(x)
+{
+  IF x MOD 2 = 0
+  {
+    RETURN(x / 2)
+  }
+  ELSE
+  {
+    RETURN(x + 3)
+  }
+}
+
+PROCEDURE result(x)
+{
+  RETURN(move(x) + 1)
+}
+
+PROCEDURE ok(x)
+{
+  IF x > 3 AND x < 9
+  {
+    RETURN(true)
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [2, 3, 4, 5, 8]
+i ← 1
+count ← 0
+sum ← 0
+
+REPEAT 5 TIMES
+{
+  value ← result(nums[i])
+
+  IF ok(value)
+  {
+    count ← count + 1
+    sum ← sum + value
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+```
+
+---
+
+# 11
+
+```text
+PROCEDURE a(x)
+{
+  RETURN(x + 2)
+}
+
+PROCEDURE b(x)
+{
+  IF x > 5
+  {
+    RETURN(a(x - 3))
+  }
+  ELSE
+  {
+    RETURN(a(x))
+  }
+}
+
+PROCEDURE c(x)
+{
+  IF x ≥ 4 AND x ≤ 8
+  {
+    IF x ≠ 5
+    {
+      RETURN(true)
+    }
+    ELSE
+    {
+      RETURN(false)
+    }
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [2, 4, 6, 7, 9]
+i ← 1
+count ← 0
+sum ← 0
+score ← 0
+
+REPEAT 5 TIMES
+{
+  value ← b(nums[i])
+
+  IF c(value)
+  {
+    count ← count + 1
+    sum ← sum + value
+    score ← score + 2
+  }
+  ELSE
+  {
+    score ← score + 1
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+DISPLAY(score)
+```
+
+---
+
+# 12
+
+```text
+PROCEDURE inc(x)
+{
+  RETURN(x + 1)
+}
+
+PROCEDURE adjust(x)
+{
+  IF x MOD 2 = 1
+  {
+    RETURN(inc(x))
+  }
+  ELSE
+  {
+    RETURN(inc(x + 2))
+  }
+}
+
+PROCEDURE valid(x)
+{
+  IF x ≥ 4 AND x ≤ 9
+  {
+    IF x = 6
+    {
+      RETURN(false)
+    }
+    ELSE
+    {
+      RETURN(true)
+    }
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [1, 2, 5, 6, 8]
+i ← 1
+count ← 0
+sum ← 0
+bonus ← 0
+
+REPEAT 5 TIMES
+{
+  value ← adjust(nums[i])
+
+  IF valid(value)
+  {
+    count ← count + 1
+    sum ← sum + value
+
+    IF value > 7
+    {
+      bonus ← bonus + 2
+    }
+    ELSE
+    {
+      bonus ← bonus + 1
+    }
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+DISPLAY(bonus)
+```
+
+---
+
+# 13
+
+```text
+PROCEDURE p(x)
+{
+  RETURN(x * 2)
+}
+
+PROCEDURE q(x)
+{
+  IF x < 5
+  {
+    RETURN(p(x))
+  }
+  ELSE
+  {
+    RETURN(p(x - 2))
+  }
+}
+
+PROCEDURE r(x)
+{
+  IF x ≥ 4 AND x ≤ 10
+  {
+    RETURN(true)
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [1, 3, 5, 6, 8]
+i ← 1
+count ← 0
+total ← 0
+
+REPEAT 5 TIMES
+{
+  value ← q(nums[i])
+
+  IF r(value)
+  {
+    count ← count + 1
+    total ← total + value
+  }
+  ELSE
+  {
+    total ← total + 1
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(total)
+```
+
+---
+
+# 14
+
+```text
+PROCEDURE first(x)
+{
+  RETURN(x + 2)
+}
+
+PROCEDURE second(x)
+{
+  RETURN(first(x) - 1)
+}
+
+PROCEDURE good(x)
+{
+  IF x > 3 AND x < 9
+  {
+    IF NOT(x = 6)
+    {
+      RETURN(true)
+    }
+    ELSE
+    {
+      RETURN(false)
+    }
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+vals ← [2, 4, 5, 6, 8]
+i ← 1
+count ← 0
+sum ← 0
+score ← 0
+
+REPEAT 5 TIMES
+{
+  num ← second(vals[i])
+
+  IF good(num)
+  {
+    count ← count + 1
+    sum ← sum + num
+    score ← score + 2
+  }
+  ELSE
+  {
+    score ← score + 1
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+DISPLAY(score)
+```
+
+---
+
+# 15
+
+```text
+PROCEDURE up(x)
+{
+  RETURN(x + 3)
+}
+
+PROCEDURE down(x)
+{
+  RETURN(x - 2)
+}
+
+PROCEDURE convert(x)
+{
+  IF x > 6
+  {
+    RETURN(down(up(x)))
+  }
+  ELSE
+  {
+    RETURN(up(down(x)))
+  }
+}
+
+PROCEDURE check(x)
+{
+  IF x ≥ 4 AND x ≤ 9
+  {
+    RETURN(true)
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [2, 4, 6, 7, 10]
+i ← 1
+count ← 0
+sum ← 0
+
+REPEAT 5 TIMES
+{
+  value ← convert(nums[i])
+
+  IF check(value)
+  {
+    count ← count + 1
+    sum ← sum + value
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+```
+
+---
+
+# 16
+
+```text
+PROCEDURE add(x)
+{
+  RETURN(x + 1)
+}
+
+PROCEDURE twice(x)
+{
+  RETURN(add(add(x)))
+}
+
+PROCEDURE valid(x)
+{
+  IF x ≥ 5 AND x ≤ 9
+  {
+    IF x ≠ 7
+    {
+      RETURN(true)
+    }
+    ELSE
+    {
+      RETURN(false)
+    }
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [2, 3, 5, 6, 8]
+i ← 1
+count ← 0
+sum ← 0
+score ← 0
+
+REPEAT 5 TIMES
+{
+  value ← twice(nums[i])
+
+  IF valid(value)
+  {
+    count ← count + 1
+    sum ← sum + value
+
+    IF value > 6
+    {
+      score ← score + 2
+    }
+    ELSE
+    {
+      score ← score + 1
+    }
+  }
+  ELSE
+  {
+    score ← score + 1
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+DISPLAY(score)
+```
+
+---
+
+# 17
+
+```text
+PROCEDURE f(x)
+{
+  RETURN(x + 2)
+}
+
+PROCEDURE g(x)
+{
+  IF x MOD 2 = 0
+  {
+    RETURN(f(x))
+  }
+  ELSE
+  {
+    RETURN(f(x - 1))
+  }
+}
+
+PROCEDURE h(x)
+{
+  RETURN(g(x) + 1)
+}
+
+PROCEDURE ok(x)
+{
+  IF x ≥ 4 AND x ≤ 8
+  {
+    RETURN(true)
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [1, 2, 5, 6, 9]
+i ← 1
+count ← 0
+total ← 0
+
+REPEAT 5 TIMES
+{
+  value ← h(nums[i])
+
+  IF ok(value)
+  {
+    count ← count + 1
+    total ← total + value
+  }
+  ELSE
+  {
+    total ← total + 1
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(total)
+```
+
+---
+
+# 18
+
+```text
+PROCEDURE change(x)
+{
+  IF x < 4
+  {
+    RETURN(x + 4)
+  }
+  ELSE
+  {
+    RETURN(x - 1)
+  }
+}
+
+PROCEDURE result(x)
+{
+  RETURN(change(x) + change(2))
+}
+
+PROCEDURE test(x)
+{
+  IF x ≥ 7 AND x ≤ 10
+  {
+    IF NOT(x = 9)
+    {
+      RETURN(true)
+    }
+    ELSE
+    {
+      RETURN(false)
+    }
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [1, 3, 4, 6, 8]
+i ← 1
+count ← 0
+sum ← 0
+score ← 0
+
+REPEAT 5 TIMES
+{
+  value ← result(nums[i])
+
+  IF test(value)
+  {
+    count ← count + 1
+    sum ← sum + value
+    score ← score + 2
+  }
+  ELSE
+  {
+    score ← score + 1
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+DISPLAY(score)
+```
+
+---
+
+# 19
+
+```text
+PROCEDURE a(x)
+{
+  RETURN(x + 1)
+}
+
+PROCEDURE b(x)
+{
+  RETURN(x + 2)
+}
+
+PROCEDURE c(x)
+{
+  IF x > 5
+  {
+    RETURN(a(b(x)))
+  }
+  ELSE
+  {
+    RETURN(b(a(x)))
+  }
+}
+
+PROCEDURE valid(x)
+{
+  IF x ≥ 5 AND x ≤ 10
+  {
+    RETURN(true)
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [2, 4, 5, 6, 8]
+i ← 1
+count ← 0
+total ← 0
+
+REPEAT 5 TIMES
+{
+  value ← c(nums[i])
+
+  IF valid(value)
+  {
+    count ← count + 1
+    total ← total + value
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(total)
+```
+
+---
+
+# 20
+
+```text
+PROCEDURE plus(x)
+{
+  RETURN(x + 2)
+}
+
+PROCEDURE minus(x)
+{
+  RETURN(x - 1)
+}
+
+PROCEDURE convert(x)
+{
+  IF x MOD 2 = 0
+  {
+    RETURN(plus(minus(x)))
+  }
+  ELSE
+  {
+    RETURN(minus(plus(x)))
+  }
+}
+
+PROCEDURE good(x)
+{
+  IF x ≥ 3 AND x ≤ 8
+  {
+    IF x ≠ 5
+    {
+      RETURN(true)
+    }
+    ELSE
+    {
+      RETURN(false)
+    }
+  }
+  ELSE
+  {
+    RETURN(false)
+  }
+}
+
+nums ← [1, 2, 4, 5, 8]
+i ← 1
+count ← 0
+sum ← 0
+bonus ← 0
+
+REPEAT 5 TIMES
+{
+  value ← convert(nums[i])
+
+  IF good(value)
+  {
+    count ← count + 1
+    sum ← sum + value
+
+    IF value > 6
+    {
+      bonus ← bonus + 2
+    }
+    ELSE
+    {
+      bonus ← bonus + 1
+    }
+  }
+  ELSE
+  {
+    bonus ← bonus + 1
+  }
+
+  i ← i + 1
+}
+
+DISPLAY(count)
+DISPLAY(sum)
+DISPLAY(bonus)
+```
+
+
