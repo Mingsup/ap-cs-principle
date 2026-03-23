@@ -1222,3 +1222,158 @@ DISPLAY(count)
 DISPLAY(sum)
 DISPLAY(score)
 
+下面是这 20 题的答案。
+
+我按 `DISPLAY` 的顺序直接写结果。
+
+---
+
+## 1
+
+`DISPLAY(count)` → **4**
+`DISPLAY(sum)` → **25**
+
+---
+
+## 2
+
+`DISPLAY(count)` → **2**
+`DISPLAY(score)` → **14**
+
+---
+
+## 3
+
+`DISPLAY(count)` → **4**
+`DISPLAY(sum)` → **29**
+`DISPLAY(bonus)` → **7**
+
+---
+
+## 4
+
+`DISPLAY(count)` → **2**
+`DISPLAY(total)` → **14**
+
+---
+
+## 5
+
+`DISPLAY(count)` → **3**
+`DISPLAY(sum)` → **17**
+`DISPLAY(score)` → **9**
+
+---
+
+## 6
+
+`DISPLAY(count)` → **2**
+`DISPLAY(sum)` → **8**
+
+---
+
+## 7
+
+`DISPLAY(count)` → **4**
+`DISPLAY(total)` → **32**
+`DISPLAY(points)` → **6**
+
+---
+
+## 8
+
+`DISPLAY(count)` → **3**
+`DISPLAY(sum)` → **16**
+`DISPLAY(score)` → **8**
+
+---
+
+## 9
+
+`DISPLAY(count)` → **4**
+`DISPLAY(sum)` → **19**
+
+---
+
+## 10
+
+`DISPLAY(count)` → **4**
+`DISPLAY(total)` → **17**
+`DISPLAY(score)` → **7**
+
+---
+
+## 11
+
+`DISPLAY(count)` → **4**
+`DISPLAY(sum)` → **13**
+
+---
+
+## 12
+
+`DISPLAY(count)` → **3**
+`DISPLAY(sum)` → **19**
+`DISPLAY(score)` → **8**
+
+---
+
+## 13
+
+`DISPLAY(count)` → **2**
+`DISPLAY(total)` → **13**
+
+---
+
+## 14
+
+`DISPLAY(count)` → **4**
+`DISPLAY(sum)` → **20**
+`DISPLAY(bonus)` → **5**
+
+---
+
+## 15
+
+`DISPLAY(count)` → **4**
+`DISPLAY(sum)` → **28**
+`DISPLAY(score)` → **9**
+
+---
+
+## 16
+
+`DISPLAY(count)` → **5**
+`DISPLAY(total)` → **16**
+
+---
+
+## 17
+
+`DISPLAY(count)` → **2**
+`DISPLAY(sum)` → **13**
+`DISPLAY(score)` → **7**
+
+---
+
+## 18
+
+`DISPLAY(count)` → **3**
+`DISPLAY(total)` → **16**
+
+---
+
+## 19
+
+`DISPLAY(count)` → **4**
+`DISPLAY(sum)` → **31**
+`DISPLAY(bonus)` → **5**
+
+---
+
+## 20
+
+`DISPLAY(count)` → **5**
+`DISPLAY(sum)` → **26**
+`DISPLAY(score)` → **10**
+
